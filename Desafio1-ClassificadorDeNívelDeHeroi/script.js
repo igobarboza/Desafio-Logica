@@ -15,13 +15,31 @@ console.log("Treinamento enfim concluído!")
 
 if (xp >= 100 &&xp <= 999) {
     level = "Ferro"
-} else if (xp >= 1000 && xp <=1999) {
-    level = "Bronze"
-}
+} 
 console.log("Agora você é um guerreiro de nível: " + level)
 console.log("O Héroi começa sua Jornada, de verdade dessa vez...")
 
 for (let i = 1; i <= 11; i++) {
+    //batalha simulada com ajuda da IA (Gemini)//
+     if (i === 6) {
+        console.log("\n==================================================");
+        console.log("💥 CRITICAL HIT! 💥");
+        console.log("==================================================");
+        console.log("Batalha 7: " + nome + " ficou impressionado com sua sorte e se distraiu,");
+        console.log("tropeçou em uma pedra e foi esmagado pelo Orc Comum.");
+        console.log("\n💀 GAME OVER... Ou quase isso. 💀");
+        console.log("Parabéns, você conseguiu morrer sendo O PROTAGONISTA!");
+        console.log("--------------------------------------------------");
+        console.log("✨ [Espaço Celestial] ✨");
+        console.log("Deusa Tainá: *risadas histéricas*");
+        console.log("Deusa Tainá: 'Sério mesmo, " + nome + "? Esmagado por tropeçar numa PEDRA?!'");
+        console.log("Deusa Tainá: 'Eu deveria te reencarnar como um Slime por puro castigo...'");
+        console.log("Deusa Tainá: 'Mas enfim, pelas regras sou obrigada a te dar outra chance, e blábláblá'");
+        console.log("Deusa Tainá: 'Levanta daí, e tente não passar tanta vergonha de novo e VÁ!'");
+        console.log("==================================================\n");
+        console.log("--- Revivido com sucesso! Retomando à jornada... ---\n");
+     }
+     //continuando código manual
     if (i<= 2) {
         xp += 500
         console.log("500 de exp ganha. Por derrotar Goblin. " + "Exp atual: " + xp + " xp")
@@ -79,7 +97,7 @@ console.log("pois agora você é o início, o meio e o fim.");
 console.log("");
 } else {
     level !== "Divino"
-    console.log("Parabéns, " + nome + " Você concluiu o jogo com sucesso.") 
+    console.log("Parabéns, " + nome + " Você conseguiu morrer no seu próprio jogo.") 
     console.log("Vá em busca de novas aventuras");
     console.log("O mundo precisa que você Transcenda!");
 }
