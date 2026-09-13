@@ -1,8 +1,38 @@
 const nome = "Blade"
-let xp = 100000
+let xp = 0
 let level = ""
 
-if (xp <= 999) {
+console.log("O Herói " + nome + " está iniciando sua jornada, um mero Camponês")
+console.log("exp inicial: " + xp)
+console.log("Primeiro embate iniciado...")
+
+while (xp < 100) {
+    xp += 50
+    console.log("50 de exp ganha. Por derrotar um simplório Slime. Exp atual: " + xp + "xp")
+}
+console.log("...espero que ninguém tenha visto isso...")
+console.log("Treinamento enfim concluído!")
+
+if (xp >= 100 &&xp <= 999) {
+    level = "Ferro"
+} else if (xp >= 1000 && xp <=1999) {
+    level = "Bronze"
+}
+console.log("Agora você é um guerreiro de nível: " + level)
+console.log("O Héroi começa sua Jornada, de verdade dessa vez...")
+
+for (let i = 1; i <= 11; i++) {
+    if (i<= 2) {
+        xp += 500
+        console.log("500 de exp ganha. Por derrotar Goblin. " + "Exp atual: " + xp + " xp")
+        
+    }
+    else {
+        xp += 1000
+    console.log("1000 de exp ganha. Por derrotar Orc Superior. " + "Exp atual: " + xp + " xp")
+    
+}
+if (xp >= 100 &&xp <= 999) {
     level = "Ferro"
 } else if (xp >= 1000 && xp <=1999) {
     level = "Bronze"
@@ -21,8 +51,8 @@ if (xp <= 999) {
 } else {
     level = "Divino"
 }
-
 console.log("O Herói " + nome + " está no nível " + level)
+}
 
 //Feito com ajuda de uma IA (Gemini) :)
 // O FIM...:
