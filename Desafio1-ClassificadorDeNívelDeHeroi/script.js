@@ -26,6 +26,10 @@ for (let i = 1; i <= 11; i++) {
         xp += 500
         console.log("500 de exp ganha. Por derrotar Goblin. " + "Exp atual: " + xp + " xp")
         
+    } else if (i=== 11) {
+        xp += 10900
+        console.log("10900 de exp ganha. Por derrotar O Lorde Demônio. " + "Exp atual: " + xp + " xp")
+        console.log("Sim, você estava num Isekai este tempo todo")
     }
     else {
         xp += 1000
